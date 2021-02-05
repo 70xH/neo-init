@@ -20,10 +20,13 @@ call plug#begin('~/.config/nvim/plugged')
 		Plug 'tpope/vim-surround'
 		Plug 'dhruvasagar/vim-table-mode'
 		Plug 'jiangmiao/auto-pairs'
+		Plug 'godlygeek/tabular'
+		Plug 'plasticboy/vim-markdown'
 
 		" fuzzy finding
 		Plug 'junegunn/fzf', { 'dir' : '~/.fzf', 'do': './install --all' }
 		Plug 'junegunn/fzf.vim'
+		Plug 'ctrlpvim/ctrlp.vim'
 
 		" git
 		Plug 'tpope/vim-fugitive'
@@ -47,4 +50,10 @@ call plug#begin('~/.config/nvim/plugged')
 		Plug 'preservim/nerdtree'
 		Plug 'Xuyuanp/nerdtree-git-plugin'
 		Plug 'ryanoasis/vim-devicons'
+
+		" undo stuff
+		Plug 'simnalamburt/vim-mundo'
+
+		" startup
+		Plug 'mhinz/vim-startify'	
 call plug#end()
