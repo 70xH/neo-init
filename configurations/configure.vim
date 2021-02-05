@@ -89,10 +89,19 @@ let g:NERDTreeGitStatusIndicatorMapCustom = {
                 \ 'Clean'     :'✔︎',
                 \ 'Unknown'   :'?',
                 \ }
+" Open the existing NERDTree on each new tab.
+autocmd BufWinEnter * silent NERDTreeMirror
+" Exit Vim if NERDTree is the only window left.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
+    \ quit | endif
 
 " simnalamburt/vim-mundo
 set undofile
 set undodir=~/config/vim-undo
+nnoremap <F5> :MundoToggle<CR>
+let g:mundo_width = 60
+let g:mundo_preview_height = 40
+let g:mundo_right = 1
 
 " /ctrlpvim/ctrlp.vim
 let g:ctrlp_map = '<c-p>'
