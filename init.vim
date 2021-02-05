@@ -34,7 +34,6 @@ let g:markdown_fenced_languages = ['go', 'c', 'cpp', 'java']
 au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme * hi LineNr ctermfg=none guibg=none
 
-
 " SOURCE VIM FILES "
 source ~/.config/nvim/plugins.vim
 source ~/.config/nvim/configurations/configure.vim
