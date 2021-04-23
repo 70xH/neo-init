@@ -1,9 +1,10 @@
 " CONFIGURE PLUGINS "
 
-" sjl/badwolf
-colorscheme badwolf
+" Rigellute/shades-of-purple.vim
+colorscheme shades_of_purple
+let g:shades_of_purple_lightline = 1
 
-" itchyny/vim-gitbranch and itchyny/lightline.vim
+" itchyny/vim-gitbranch and Rigellute/shades-of-purple.vim
 let g:lightline = {
 		\ 'active' : {
 		\ 'left' : [ [ 'mode', 'paste' ],
@@ -12,7 +13,7 @@ let g:lightline = {
 		\ 'component_function' : {
 		\	'gitbranch' : 'gitbranch#name'
 		\ },
-		\ 'colorscheme' : 'badwolf',
+		\ 'colorscheme' : 'shades_of_purple',
 		\ }
 
 " szw/vim-maximizer
@@ -66,9 +67,9 @@ nnoremap <silent> <leader>	:WhichKey '<space>'<CR>
 set timeoutlen=500
 
 " hugolgst/vimsence
-let g:vimsence_small_text = 'NeoVim'
-let g:vimsence_small_image = 'neovim'
-let g:vimsence_custom_icons = {'filetype': 'iconname'}
+" let g:vimsence_small_text = 'NeoVim'
+" let g:vimsence_small_image = 'neovim'
+" let g:vimsence_custom_icons = {'filetype': 'iconname'}
 
 " preservim/nerdtree
 nnoremap <leader>f :NERDTreeFind<CR>
