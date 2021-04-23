@@ -6,6 +6,9 @@ call plug#begin('~/.config/nvim/plugged')
 		Plug 'sjl/badwolf'
 		Plug '844196/lightline-badwolf.vim'
 		Plug 'tomasiser/vim-code-dark'
+		Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+		Plug 'wadackel/vim-dogrun'
+		Plug 'Rigellute/shades-of-purple.vim'
 
 		" tabline
 		Plug 'itchyny/lightline.vim'
@@ -19,9 +22,10 @@ call plug#begin('~/.config/nvim/plugged')
 		Plug 'sbdchd/neoformat'
 		Plug 'tpope/vim-surround'
 		Plug 'dhruvasagar/vim-table-mode'
-		Plug 'jiangmiao/auto-pairs'
+		Plug 'Raimondi/delimitMate'
 		Plug 'godlygeek/tabular'
-		Plug 'plasticboy/vim-markdown'
+		Plug 'shime/vim-livedown'
+
 
 		" fuzzy finding
 		Plug 'junegunn/fzf', { 'dir' : '~/.fzf', 'do': './install --all' }
