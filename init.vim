@@ -28,7 +28,7 @@ endif
 let g:netrw_banner=0							" remove the banner from the file explorer
 
 " for markdown languages
-let g:markdown_fenced_languages = ['go', 'c', 'cpp', 'java']
+let g:markdown_syntax_conceal = 0
 
 " transparency
 au ColorScheme * hi Normal ctermbg=none guibg=none
